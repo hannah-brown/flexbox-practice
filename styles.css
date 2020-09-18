@@ -1,0 +1,151 @@
+/* Global view */
+body{
+    color: white;
+    font-family: 'Asap', sans-serif;
+    background-color: #ebebeb;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.header-container{
+    background-color: rgb(100, 97, 97);
+    min-height: 100px;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;
+}
+
+.mybutton{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 10px 25px;
+    margin-left: 0px;
+    margin-right: 40px;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+
+.container{
+   padding-top: 150px;
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col{
+    background-color: magenta;
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line{
+    font-weight: 700;
+}
+
+.col p{
+    font-size: 0.825 rem;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+}
+
+.hide-desktop{
+    display: none;
+}
+
+.mobile-wrapper{
+    display: none;
+}
+
+/* Tablet View */
+@media(max-width: 768px){
+
+.col{
+    width: 45%;
+}
+
+.hide-desktop{
+    display: block;
+}
+
+
+.mybutton{
+    display: block;
+    margin: 0px;
+}
+
+.logo{
+    display: block;
+    padding: 40px 0px;
+}
+
+.header-container{
+    padding: 0;
+    position: relative;
+}
+.container{
+    padding-top: 20px;
+}
+
+nav{
+    display: none;
+}
+
+.mobile-wrapper{
+    display: block;
+    padding-right: 30px;
+}
+
+.mobile-nav{
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+}
+
+.nav-button{
+    display: block;
+    background-color:#1ED1A8;
+    padding: 15px 30px;
+    margin-left: -90px;
+    text-align: center;
+
+}
+
+}
+
+/* Mobile view */
+@media(max-width: 400px){
+    
+.col{
+    width: 100%;
+}
+
+.hide-mobile{
+    display: none;
+}
+
+
+}
